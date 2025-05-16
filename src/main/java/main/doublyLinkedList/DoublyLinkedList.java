@@ -83,23 +83,6 @@ public class DoublyLinkedList<T> {
         return null;
     }
 
-    public boolean addAfter (T data, T newData){
-        if(!contains(data)){
-            return false;
-        }
-        Link<T> a = getLink(data);
-        if(a == last){
-            insertLast(newData);
-        } else {
-            Link<T> b = a.getNext();
-            Link<T> c = new Link<>(newData);
-            c.setPrev(a);
-            c.setNext(b);
-            a.setNext(c);
-            a.setPrev(c);
-        }
-        return true;
-    }
 
     public boolean addBefore (T data, T newData){
         if(!contains(data)){
@@ -116,26 +99,6 @@ public class DoublyLinkedList<T> {
             a.setPrev(c);
             b.setNext(c);
         }
-        return true;
-    }
-
-    public boolean remove(T data) {
-        Link<T> link = getLink(data);
-        if(link == null){
-            return false;
-        }
-        if(link == first){
-            removeFirst();
-            return true;
-        }
-        if(link == last){
-            removeLast();
-            return true;
-        }
-        Link<T> a = link.getPrev();
-        Link<T> b = link.getNext();
-        a.setNext(b);
-        b.setPrev(a);
         return true;
     }
 
