@@ -22,11 +22,11 @@ public class Controller {
                 case 2 -> doOperations(2);
                 case 3 ->{
                     var checkList1 = new PriorityQueueOnArray();
-                    printer.timePrinter("Priority queue (Array) adding 10_000 element time: ", tm.tmAdding(checkList1));
+                    printer.timePrinter("Priority queue (Array) adding 10000 element time: ", tm.tmAdding(checkList1));
                     printer.timePrinter("Priority queue (Array) deleting 1000 element time: ", tm.tmDeleting(checkList1));
 
                     var checkList2 = new PriorityQueueOnDoublyLinkedList();
-                    printer.timePrinter("Priority queue (DLL) adding 10_000 element time: ", tm.tmAdding(checkList2));
+                    printer.timePrinter("Priority queue (DLL) adding 10000 element time: ", tm.tmAdding(checkList2));
                     printer.timePrinter("Priority queue (DLL) deleting 1000 element time: ", tm.tmDeleting(checkList2));
                 }
                 case 0 ->{
