@@ -6,7 +6,7 @@ public class Printer {
                 Choose the type of priority queue modeling:
                 1. Priority queue on array(heap);
                 2. Priority queue on doubly linked list;
-                3. Measure the time of adding 10_000 elements and deleting the 1000.
+                3. Measure the time of adding 10000 elements and deleting the 1000.
                 0. Exit.
                 Your choice:\s""");
     }
