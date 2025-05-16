@@ -59,7 +59,6 @@ public class Controller {
                     else printer.printer(q2.peek().toString());
                 }
                 case 4 -> {
-                    printer.printer("Full queue:\n");
                     if(op == 1) printer.printer("Array modeling: " + q1);
                     else if(op == 2) printer.printer("Doubly linked list modeling: " + q2);
                 }
